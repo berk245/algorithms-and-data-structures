@@ -1,5 +1,16 @@
 def simple_search(arr, target):
-    '''
+    if not len(arr):
+        print('Empty list')
+        return False
+    for index in range(len(arr)):
+        if arr[index] == target:
+            print('Found Here', index)
+            return index
+    print('Not found')
+    return False
+
+
+'''
     Simple or linear search is an example of linear run time complexity.
 
     GOAL
@@ -38,5 +49,12 @@ def simple_search(arr, target):
         3)Average Case:
             In the average case, the target value is located close to the middle of the array. Depending on the array size and
             if the array is sorted, linear search can be an acceptable/rational algorithm choice.  
+    
 
     '''
+
+arr = [1, 2, 3, 4, 5, 6, 7, 8]
+
+simple_search(arr, 4)
+simple_search(arr, 10)
+simple_search([], 5)
