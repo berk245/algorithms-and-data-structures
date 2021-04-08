@@ -20,7 +20,8 @@ def recursive_binary_search(list, target):
             return recursive_binary_search(sliced_list, target)
 
 
- '''
+'''
+
     GOAL
         The goal of the algorithm is to find the target value's index in the provided array.
         Important: Binary search can return successful results when applied to sorted arrays only.
