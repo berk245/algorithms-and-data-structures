@@ -60,7 +60,7 @@ Which can be written as:
 
 This equation shows that the Worst Case time complexity for Insertion Sort is quadratic, **O(n^2)**.
 
-#### Average Case O(n^2)
+- #### Average Case O(n^2)
 
 The average case is similar to the worst case scenario. Instead of having a descending sorted list, we have two assumptions: - Half of the elements in the array will be in the right place (so no swapping operations) - Half of the values will be inserted in the middle of the 'sorted' section.
 
