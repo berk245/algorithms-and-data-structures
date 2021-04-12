@@ -49,11 +49,13 @@ This markdown analysis the quicksort algorithm. It includes:
      - This operation inserts the pivot in its sorted position. The original at that point is partially sorted. The values on the left side of the pivot are smaller than the pivot and vice versa.
 
 - ### Quicksort
-  1. Run the partition function on the input array and find the index of the pivot value.
-  2. Call quick_sort on the initial array with start_index 0 and end_index pivot_index-1. (values in this section are smaller than the pivot value)
-  3. Call quick_sort on the initial array with start_index pivot_index + 1 and end_index last elemetn of the array. (values in this section are bigger than the pivot value)
-  4. Steps 2 and 3 recursively call the same function until a subarray has zero or one elements (or in other words when start index is equal to end index)
-  5. Finally, return the sorted array.
+  1. **Run the partition function on the input array and find the index of the pivot value.**
+  2. **Call quick_sort on the initial array with start_index 0 and end_index pivot_index-1.**
+     - Values in this subarray are smaller than the pivot value
+  3. **Call quick_sort on the initial array with start_index pivot_index + 1 and end_index last elemetn of the array.**
+     - Values in this section are bigger than the pivot value
+  4. **Steps 2 and 3 recursively call the same function until a subarray has zero or one elements (or in other words when start index is equal to end index)**
+  5. **Finally, return the sorted array.**
 
 ## Time and Space Complexity
 
