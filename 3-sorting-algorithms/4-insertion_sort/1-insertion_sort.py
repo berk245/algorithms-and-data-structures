@@ -23,7 +23,8 @@ def insertion_sort(arr):
         An additional checker for ensuring that the elements of array are numbers can also be added depending on the use case.
 
     STEPS
-        Insertion sort 
+        Insertion sort algorithm's key concept is dividing the array into two sub-arrays, sorted and unsorted. 
+        The initial division is after the 0th index
 
     TIME COMPLEXITY
         1) Best Case:

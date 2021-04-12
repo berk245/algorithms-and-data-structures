@@ -43,32 +43,33 @@ This markdown analysis the insertion sort algorithm. It includes:
   The best case scenario happens when the input array is already sorted. In that case, we do (n-1) comparisons-n being the array size- and zero swaps.
 
 - #### Worst Case O(n^2)
+
   The worst case scenario happens when the input array is already sorted but in a descending order. In that case, for each unsorted element, (n-1) times, we do index times comparison and swap operations. To make it clear: - In [4,3,2,1]:
   i=1 1 comparison 1 swap
   i=2 2 comparisons 2 swaps
   i=3 3 comparisons 3 swaps
 
-Therefore we have an equation of:
+  Therefore we have an equation of:
 
-- 2(1) + 2(2) + 2(3) +... + 2(n-1)
+  - 2(1) + 2(2) + 2(3) +... + 2(n-1)
 
-Which can be written as:
+  Which can be written as:
 
-- 2( 1 + 2+3 + .. + (n-3) +(n-2)+(n-1) )
-  or
-- 2 ( n \* (n-1) / 2) = n^2 - n
+  - 2( 1 + 2+3 + .. + (n-3) +(n-2)+(n-1) )
+    or
+  - 2 ( n \* (n-1) / 2) = n^2 - n
 
-This equation shows that the Worst Case time complexity for Insertion Sort is quadratic, **O(n^2)**.
+  This equation shows that the Worst Case time complexity for Insertion Sort is quadratic, **O(n^2)**.
 
 - #### Average Case O(n^2)
 
-The average case is similar to the worst case scenario. Instead of having a descending sorted list, we have two assumptions: - Half of the elements in the array will be in the right place (so no swapping operations) - Half of the values will be inserted in the middle of the 'sorted' section.
+  The average case is similar to the worst case scenario. Instead of having a descending sorted list, we have two assumptions: - Half of the elements in the array will be in the right place (so no swapping operations) - Half of the values will be inserted in the middle of the 'sorted' section.
 
-Therefore the equation for the average case would be:
+  Therefore the equation for the average case would be:
 
-** (n^2)-n _ 1/2 _ 1\*2**
+  ** (n^2)-n _ 1/2 _ 1\*2**
 
-Since the highest level of complexity is n^2, the time complexity of the average case is **O(n^2)**.
+  Since the highest level of complexity is n^2, the time complexity of the average case is **O(n^2)**.
 
 ### Space Complexity
 
