@@ -23,7 +23,7 @@ This markdown analysis the quicksort algorithm. It includes:
   - The start index
   - The end index
 
-- Start and end indices refer to the pointers that initially points to the start and end of the array. In later iterations, they allow us to do the sorting in subarrays. The purpose and use of them will become more clear in the 'Steps' section.
+- Start and end indices refer to the pointers that initially point to the start and end of the array. In later iterations, they allow us to do the sorting in subarrays. The purpose and use of them will become more clear in the 'Steps' section.
 
 ## Termination Conditions
 
@@ -34,17 +34,22 @@ This markdown analysis the quicksort algorithm. It includes:
 
 - This quicksort implementation relies heavily on another function called partition. In this section, both partition and quick_sort functions are going to be analysed individually.
 - ### Partition
-- The goal of this function is to select a pivot value from the array and arrange a rough order based on this value. The values that are smaller than the pivot will be on the left side of the pivot's index and the ones that are greater will be on the right. At the end, the index of the pivot will be returned. Here are the steps:
 
-  1. Find a pivot element in the array and save its initial index in a variable.
+  - The goal of this function is to select a pivot value from the array and arrange a rough order based on this value. The values that are smaller than the pivot will be on the left side of the pivot's index and the ones that are greater will be on the right. At the end, the index of the pivot will be returned. Here are the steps:
+
+  1. **Find a pivot element in the array and save its initial index in a variable.**
      - In this implementation it is the first value of the array. This can be changed for optimizitaion purposes(choosing a random pivot or choosing the middle element are some options)
-  2. Start a while loop that goes on until left pointer is equal or greater than right pointer. Within this while loop:
+  2. **Start a while loop that goes on until left pointer is equal or greater than right pointer. Within this while loop:**
 
      - While the value of array[left_pointer] is less than the pivot value, move the left pointer to the right by incrementing it. Continue until array[left_pointer] is greater than or equal to the pivot value.
      - While the array[right_pointer] is greater than the pivot value, move the right pointer to the left by decrementing it. Continue until array[right_pointer] is less than or equal to the pivot value.
      - If right_pointer is greater than the left_pointer, swap the values they are pointing to.
 
-  3. After the while loop finishes, swap the pivot value with the array[right_pointer]
+  3. **After the while loop finishes, swap the pivot value with the array[right_pointer]**
+     - This operation inserts the pivot in its sorted position. The original at that point is partially sorted. The values on the left side of the pivot are smaller than the pivot and vice versa.
+
+- ### Quicksort
+-
 
 ## Time and Space Complexity
 
