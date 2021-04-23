@@ -67,8 +67,4 @@ This markdown analyses the quicksort algorithm. It includes:
 
 - #### Average Case O(n logn)
 
-  - A detailed analysis and explanation of the time and space complexities can be found in this [video](https://youtu.be/O3JASKOR6H0 "Title").
-
-### Space Complexity
-
-- The algorithm does not need any additonal memory space as the loop progresses. It only re-arranges the input array. Because of that, we can conclude that the Space Complexity of Insertion sort is O(1)
+- I have recorded a presentation video in which I analyzed and explainedthe above mentioned time complexities, along with space complexity of the algorithm. It can be accessed via this [link ](https://youtu.be/O3JASKOR6H0 "Title").
