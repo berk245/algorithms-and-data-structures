@@ -65,7 +65,9 @@ This markdown analyses the quicksort algorithm. It includes:
 
 - #### Worst Case O(n^2)
 
-- #### Average Case O
+- #### Average Case O(n logn)
+
+  - A detailed analysis and explanation of the time and space complexities can be found in this [video](https://youtu.be/O3JASKOR6H0 "Title").
 
 ### Space Complexity
 
