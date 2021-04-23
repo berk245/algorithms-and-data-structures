@@ -31,7 +31,7 @@ This markdown analysis the insertion sort algorithm. It includes:
 - We define an indexes_to_sort variable to iterate over the 'unsorted' section of the list.
 - We start a for loop in the unsorted area (in the range of indexes_to_sort).
 - We look at the first element of the unsorted section, value_to_sort and 'insert' it where it belongs by comparing it with it's neighbor on its left.
-- We keep on moving value_to_sorted to the left until it is greater than the number on its left or the index is zero.
+- We keep on moving value_to_sort to the left until it is greater than the number on its left or the index is zero.
 - We return the array after every value is moved to the sorted section of the array.
 
 ## Time and Space Complexity
@@ -55,7 +55,7 @@ This markdown analysis the insertion sort algorithm. It includes:
 
   Which can be written as:
 
-  - 2( 1 + 2+3 + .. + (n-3) +(n-2)+(n-1) )
+  - 2( 1 + 2 + 3 + .. + (n-3) + (n-2) + (n-1) )
     or
   - 2 ( n \* (n-1) / 2) = n^2 - n
 

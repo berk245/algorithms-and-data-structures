@@ -20,7 +20,7 @@ def quick_sort(arr, start_index, end_index):
     return arr
 
 
-to_sort = [10, 16, 2, 24, 15, 52, 13]
+to_sort = [14, 16, 2, 14, 24, 11, 7, 7, 15, 52, 13]
 
 # print('Before Sort:')
 # print(to_sort)
