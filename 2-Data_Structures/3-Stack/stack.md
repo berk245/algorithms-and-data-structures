@@ -29,9 +29,9 @@
    - Since none of the elements have to be shifted, this is a constant time operation.
    - Deque also allows adding elements as the head of the list with appendleft method. This method is the same in terms of time complexity and could be used based on the programmers choice.
 2. Pop = O(1)
-   - Pop returns the most recently added element from the stack and removes it.
-   - Since only the pointers of the previous element has to be cahnged, this operation also takes constant time.
-   - Just as the push method, pop can also be implemented to take out and return the head of the list. For that, popleft method, which also has a constant time can be used.
+   - Pop returns the most recently added element and removes it from the stack .
+   - Since only the pointers of the previous element has to be changed, this operation also takes constant time.
+   - Just as the push method, pop can also be implemented to remove and return the head of the list. For that, popleft method, which also has a constant time, can be used.
 3. Peek = O(1)
    - Peek and pop are practically same methods with one differnece.
    - While after pop the most recently added value is taken out from the stack, after peek it still resides in the stack.
@@ -39,12 +39,12 @@
    - Peek also has a constant time complexity.
 4. Search / Print = O(n)
    - In stacks, any operation that requires iterating on each element is expensive.
-   - Some examples for those methods are searching for a value in the stack, inserting/removing a value that is in the middle of the stack, pronting the elements of the stack.
+   - Some examples for those methods are searching for a value in the stack, printing the elements of the stack, etc.
 
 ## Strengths and Limitations
 
 - Stacks are convenient data structres for any problem that requires a Last in First out approach. Adding and removing the elements that are on top of the stack is fast and efficient.
-- The limitation of stack appears when operations have to be made on the elements that are in the middle of stack. If an application requires a lot of random insertion, deletion, search etc, stack will probably not be the most efficient choice to implement.
+- The limitation of stack appears when operations have to be made on the elements that are in the middle of stack. If an application requires a lot of random insertion, deletion, or operations that require searching and manipulating items in the list, stack will probably not be the most efficient choice to implement.
 
 ## Real-world Use
 
