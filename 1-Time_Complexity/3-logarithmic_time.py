@@ -22,7 +22,9 @@ Logarithmic Time Complexity refers to the cases in which the execution time of a
 
 The example above takes an array as an input and halves the array until the remaining array size is 1.
 
-The time complexity is not constant, since it changes based on the array size. The function needs to take one additional step as the array size doubles. Therefore this function has a logarithmic time complexity O(log n)
+The time complexity is not constant, since it changes based on the array size. The function needs to take one additional step as the array size doubles. 
+
+Therefore this function has a logarithmic time complexity O(log n)
 
 The justification for logarithmic time is as follows:
 
