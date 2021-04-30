@@ -33,7 +33,7 @@ def recursive_binary_search(list, target):
         Since this is a recursive function, in each run, the function returns a value:
         1) If the provided array is empty, False is returned
         2) If the target value is equal to the array[midpoint], True is returned.
-        3) Depending on the comparison of array[midpoint] and target, the function returns a fnction call to itself, with sliced arrays.
+        3) Depending on the comparison of array[midpoint] and target, the function returns a function call to itself, with sliced arrays.
 
     STEPS
         The first step is to check if the array has any elements. If it does not, the algorithm returns False.
@@ -43,24 +43,21 @@ def recursive_binary_search(list, target):
             We define a new subarray of the original array, by slicing it from the midpoint+1 index to the last element
             The function calls itself with the sliced array and target value
         If array[midpoint] is greater than target:
-            We define a new subarray of the original array, by slicing it from the first element to midpoint-1 index
+            We define a new subarray of the original array, by slicing it from the first element to the midpoint-1 index
             The function calls itself with the sliced array and target value       
 
     TIME COMPLEXITY: O(log n)
-        The time complexity of recursive binary search is identical to the iterative one. (See 1-binary_search.py). The main difference is the space complexity
+        The time complexity of the recursive binary search is identical to the iterative one. (See 1-binary_search.py). The main difference is the space complexity.
 
     SPACE COMPLEXITY: O(log n)
-        This algorithm implementation relies on calling the same function again with different inputs. This is especially favored in functional languages since changing
-        the values that are used in a function is considered a bad practice. On each function call of the recursive binary search, we create a sublist that is half the size of the 
-        original one, to pass to the next call. 
-        For an original array of size N, the next sub array will be N/2, the next is N/4, n/8 and so on. That is why this execution has a logarithmic time complexity.
+        This algorithm implementation relies on calling the same function again with different inputs. This is especially favored in functional languages since changing the values that are used in a function is considered a bad practice. On each function call of the recursive binary search, we create a sublist that is half the size of the original one, to pass to the next call. 
+        For an original array of size N, the next sub-array will be N/2, the next is N/4, n/8, and so on. That is why this execution has logarithmic time complexity.
         **IMPORTANT**
-        The space complexity of recursive implementation can vary depending on the language it is written. Some languages have features to make recursion more space efficient, such
-        as Tail call optimization in Swift. The above explanation applies for Python.
+        The space complexity of recursive implementation can vary depending on the language it is written. Some languages have features to make recursion more space-efficient, such as Tail call optimization in Swift. The above explanation applies to Python.
     
     USE CASES
-    Although recursive and iterative implementations of the same search algorithm have the same run time complexity, when applied in Python or a language that does not have tail call 
-    optimization like features, using the iterative implementation is the more rational choice because of its contant space complexity (when compared to logarithmic)
+    Although recursive and iterative implementations of the same search algorithm have the same run time complexity, when applied in Python or a language that does not have a tail call 
+    optimization like features, using the iterative implementation is the more rational choice because of its constant space complexity (when compared to logarithmic)
     
 
     '''

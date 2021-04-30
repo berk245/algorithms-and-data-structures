@@ -23,32 +23,27 @@ def simple_search(arr, target):
         The algorithm terminates/returns in three conditions:
         1) If the provided array is empty
         2) If the target value is found
-        3) If end of the array is reached without finding the target value
+        3) If the end of the array is reached without finding the target value
 
     STEPS
-        The search starts from the first element of the array. If that is equal to the target value,
-        the current index is returned. If not, the algorithm moves on to the next index. This comparison
-        continues until the two values match (case a) or the end of the array is reached (case b).
+        The search starts from the first element of the array. If that is equal to the target value, the current index is returned. 
+        If not, the algorithm moves on to the following index. This comparison continues until the two values match (case a) or the end of the array is reached (case b).
         When case a:
-            - The index is returned and the function terminates
+            - The function returns the index and terminates.
         When case b:
-            - 'Not found' string is returned and the function terminates
+            - The function returns 'Not found' and terminates
 
     TIME COMPLEXITY
         1) Best Case:
-            If the target value is located in the very beginning of the array, the search takes only 
-            one step to complete. Therefore it would be constant time. (O(1))
+            If the target value is located at the very beginning of the array, the search takes only one step to complete. Therefore it would be constant time. (O(1))
 
         2)Worst Case:
-            The number of steps/calculations increases if the target value is located in the end of the
-            array or if the array does not include the target value. In these cases, in order to terminate,
-            the algorithm has to make as many operations as the size of the array. 
-            Therefore, the worst case time complexity is dependant on the array size and has a linear time complexity,
-            O(n)
+            The number of steps/calculations increases if the target value is located at the end of the array or if the array does not include the target value. 
+            In these cases, to terminate, the algorithm has to make as many operations as the size of the array. 
+            Therefore, the worst-case time complexity is dependant on the array size and has a linear time complexity, O(n)
 
         3)Average Case:
-            In the average case, the target value is located close to the middle of the array. Depending on the array size and
-            if the array is sorted, linear search can be an acceptable/rational algorithm choice.  
+            In the average case, the target value is located close to the middle of the array. Depending on the array size and if the array is sorted, a linear search can be an acceptable/rational algorithm choice.  
     
 
     '''

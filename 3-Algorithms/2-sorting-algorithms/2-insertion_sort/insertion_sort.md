@@ -10,7 +10,7 @@ This markdown analysis the insertion sort algorithm. It includes:
 
 ## Goal
 
-- The goal of insertion sort algorithm is to sort an unsorted sequence of numbers.
+- The goal of the insertion sort algorithm is to sort an unsorted sequence of numbers.
 
 ## Inputs
 
@@ -19,7 +19,7 @@ This markdown analysis the insertion sort algorithm. It includes:
 ## Termination Conditions
 
 - The algorithm terminates if the input array is empty.
-- An additional checker for ensuring that the elements of array are numbers can also be added depending on the use case.
+- An additional checker for ensuring that the elements of the array are numbers can also be added depending on the use case.
 
 ## Steps
 
@@ -30,7 +30,7 @@ This markdown analysis the insertion sort algorithm. It includes:
 
 - We define an indexes_to_sort variable to iterate over the 'unsorted' section of the list.
 - We start a for loop in the unsorted area (in the range of indexes_to_sort).
-- We look at the first element of the unsorted section, value_to_sort and 'insert' it where it belongs by comparing it with it's neighbor on its left.
+- We look at the first element of the unsorted section, value_to_sort, and 'insert' it where it belongs by comparing it with its neighbor on its left.
 - We keep on moving value_to_sort to the left until it is greater than the number on its left or the index is zero.
 - We return the array after every value is moved to the sorted section of the array.
 
@@ -40,11 +40,11 @@ This markdown analysis the insertion sort algorithm. It includes:
 
 - #### Best Case O(n)
 
-  The best case scenario happens when the input array is already sorted. In that case, we do (n-1) comparisons-n being the array size- and zero swaps.
+  The best-case scenario happens when the input array is already sorted. In that case, we do (n-1) comparisons-n being the array size- and zero swaps.
 
 - #### Worst Case O(n^2)
 
-  The worst case scenario happens when the input array is already sorted but in a descending order. In that case, for each unsorted element, (n-1) times, we do index times comparison and swap operations. To make it clear: - In [4,3,2,1]:
+  The worst-case scenario happens when the input array is already sorted but in descending order. In that case, for each unsorted element, (n-1) times, we do index times comparison and swap operations. To make it clear: - In [4,3,2,1]:
   i=1 1 comparison 1 swap
   i=2 2 comparisons 2 swaps
   i=3 3 comparisons 3 swaps
@@ -57,13 +57,16 @@ This markdown analysis the insertion sort algorithm. It includes:
 
   - 2( 1 + 2 + 3 + .. + (n-3) + (n-2) + (n-1) )
     or
-  - 2 ( n \* (n-1) / 2) = n^2 - n
+  - 2 ( n \* (n-1) / 2)
+    or finally as
 
-  This equation shows that the Worst Case time complexity for Insertion Sort is quadratic, **O(n^2)**.
+- n^2 - n
+
+This equation shows that the Worst Case time complexity for Insertion Sort is quadratic, **O(n^2)**.
 
 - #### Average Case O(n^2)
 
-  The average case is similar to the worst case scenario. Instead of having a descending sorted list, we have two assumptions: - Half of the elements in the array will be in the right place (so no swapping operations) - Half of the values will be inserted in the middle of the 'sorted' section.
+  The average case is similar to the worst-case scenario. Instead of having a descending sorted list, we have two assumptions: - Half of the elements in the array will be in the right place (so no swapping operations) - Half of the values will be inserted in the middle of the 'sorted' section.
 
   Therefore the equation for the average case would be:
 
@@ -73,4 +76,4 @@ This markdown analysis the insertion sort algorithm. It includes:
 
 ### Space Complexity
 
-- The algorithm does not need any additonal memory space as the loop progresses. It only re-arranges the input array. Because of that, we can conclude that the Space Complexity of Insertion sort is O(1)
+- The algorithm does not need any additional memory space as the loop progresses. It only re-arranges the input array. Because of that, we can conclude that the Space Complexity of Insertion sort is O(1)

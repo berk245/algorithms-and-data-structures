@@ -4,7 +4,7 @@ def print_each(arr):
 
 
 '''
-    Linear Time Complexity describes an algorithm or program whose complexity will grow in direct proportion to the size of the input data. In the above simple example,
-    the number of operations are directly linked to the array size. 
+    Linear time complexity refers to the cases in which the time it takes for an algorithm to execute increases linearly as the input size increases.
+    In the above simple example, the number of operations is affected directly by the array size. The more elements in the array, the more operations the algorithm is required to perform.
     
 '''

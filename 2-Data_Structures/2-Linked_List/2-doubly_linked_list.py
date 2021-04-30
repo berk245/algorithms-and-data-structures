@@ -16,7 +16,7 @@ class DoublyNode:
 class DoublyLinkedList:
     '''
     Some methods that do not have major differences to singly_linked_list versions are omitted.
-    To demonstrate diferences, the reference to the tail is included in doubly linked list
+    To demonstrate differences, the reference to the tail is included in doubly linked list
     '''
 
     def __init__(self):
@@ -25,11 +25,12 @@ class DoublyLinkedList:
         self.size = 0
 
     def prepend(self, data):
-         '''
+        '''
         - Adds a node as the new head of the list.
         - Takes constant time O(1)
         '''
         new_node = DoublyNode(data)
+
         if self.size:
             self.tail.next_node = new_node
             new_node.prev_node = self.tail
